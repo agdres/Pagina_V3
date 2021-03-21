@@ -6,6 +6,9 @@
 html{
     font-size: 62.5%;
 }
+body{
+    background-color: rgb(1, 2, 2);
+}
 /*header*/
 .header-nav{
     width: 100%;
@@ -112,12 +115,10 @@ html{
 }
 .header-imagen{
     width: 100%;
-    height: 50rem;
-    overflow:hidden;
 }
 .header-imagen img{
-    width: 100%;
-    height: 90rem;
+    width: inherit;
+    height: 40rem;
     object-fit: cover;
 }
 /*Animacion_Header*/
@@ -142,55 +143,43 @@ html{
     font-weight: 700;
 }
 /*main*/
-body{
-    background-color: rgb(1, 2, 2);
-}
+
 body main{
     padding: 1rem;
 }
 .main-contenido{
     display: flex;
     position: relative;
-    justify-content: space-evenly;
-    align-items: center;
     width: 100%;
     height: 100rem;
-    background-color: rgb(251, 252, 253);
+    background-color: rgb(247, 250, 255);
     box-shadow: 0rem 0rem 1.5rem 0rem turquoise ;
+}
+.main-contenido__columna{
+    position: absolute;
+    display: inherit;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 20rem;
+    align-self: center;
+}
+.main-contenido__columna img{
+    width: 30rem;
+    height: 45rem;
+    object-fit: cover;
+    filter: brightness(70%);
+    flex: 1;
 }
 .main-contenido h1{
     left: 23rem;
+    align-self: center;
     position: absolute;
+    margin-left: 38rem;
     font-family: 'Shadows Into Light', cursive;
-    text-shadow: 0rem 0rem 0.5rem violet;
-    font-size: 7rem;
-    z-index: 8;
-}
-.main-imagen__h1{
-    width: 70rem;
-    height: 50rem;
-    left: 12rem;
-    position: absolute;
-}
-.main-imagen__h1 img{
-    width: 70rem;
-    height: 50rem;
-    object-fit: cover;
-    opacity: 0.9;
-}
-.main-video{
-    position: absolute;
-    display: flex;
-    margin-top: 4rem;
-    margin-right: 4rem;
-    width: 42.5%;
-    height: 50rem;
-    right: 0;
-}
-.main-video video{
-    width: 80rem;
-    height: 50rem;
-    object-fit: cover;
+    text-shadow: 0rem 0rem 1rem black;
+    color: rgb(250, 255, 252);
+    font-size: 10rem;
+    z-index: 2;
 }
 .main-contenido-2{
     display: flex;
@@ -200,4 +189,12 @@ body main{
     height: 100rem;
     background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     box-shadow: 0rem 0rem 1.5rem 0rem turquoise ;
+}
+/*Main animacion*/
+.main-contenido__columna img:hover{
+    filter: brightness(100%);
+    transition: 1s;
+}
+.main-contenido h1:hover{
+    filter: brightness(100%);
 }
