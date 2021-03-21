@@ -28,19 +28,18 @@
             <li><a href="#">Explorar</a></li>
             <li><a href="./soporte.html" target="_self">Soporte</a></li>
         </ul>
-        <label for="login" class="header-nav__label-registro">
-            <form action="login" method="POST">
-                <a href="./sign_In.html"><input class="header-nav__label-input Registro" type="button" value="Sign in"></a>
-            </form>
-        </label>
-        <label for="ingresar" class="header-nav__label-ingresar">
-            <form action="ingresar">
+        <form action="login" method="POST" class="header-nav__label-registro">
+            <label for="login" >            
+                <a href="./sign_In.html"><input class="header-nav__label-input Registro" type="button" value="Sign in" id="login"></a>
+            </label>
+        </form>
+        <form action="ingresar" method="POST" class="header-nav__label-ingresar">
+            <label for="ingresar">
                 <input class="header-nav__label-input Ingresar" type="button" value="Sign up">
-            </form>
-        </label>
+            </label>
+        </form>
     </nav>
     <figure class="header-imagen">
-        <img src="./IMG/Imagenes/Fondo.jpg" alt="Fondo">
     </figure>
     </header>
     <main>

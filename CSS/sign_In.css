@@ -3,3 +3,82 @@
     margin: 0;
     padding: 0;
 }
+#cont{
+    background: url("../IMG/Imagenes/Regitro_Fondo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: 2;
+}
+.main-contenedor{
+    width: 25%;
+    height: 40rem;
+    position: relative;
+    justify-content: center;
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+    min-width: 27rem;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    top: 10rem;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1.5rem 0 #3D0D43;
+}
+.main-contenedor h1{
+    position: absolute;
+    top: 2rem;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Shadows Into Light', cursive;
+    color: (250, 255, 252);
+    text-shadow: 0 0 1rem black;
+}
+.main-contenedor__form-label{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 4.2rem;
+}
+.usuario{
+    margin-top: -8rem;
+}
+.contraseña{
+    margin-top: 1rem;
+}
+.main-contenedor__form-label span{
+    font-size: 1.7rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    text-shadow: 0 0 1rem turquoise;
+}
+.main-contenedor__form-label input{
+    width: 21rem;
+    height: 2rem;
+    padding-left: 1rem;
+    font-family: sans-serif;
+    outline: none;
+    border: solid black 0.1rem;
+    border-radius: 1rem;
+}
+.btn__ingresar{
+    position: absolute;
+    right: 9.7rem;
+    bottom: 6rem;
+}
+.btn__ingresar input{
+    width: 10rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: solid black 0.1rem;
+    font-weight: 900;
+    font-family:  'Shadows Into Light', cursive;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+/*Animacion*/
+.main-contenedor__form-label input:hover,.main-contenedor__form-label input:focus{
+    box-shadow: 0 0 1rem  #3D0D43;
+}

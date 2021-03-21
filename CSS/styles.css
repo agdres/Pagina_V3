@@ -114,12 +114,11 @@ body{
     outline: none;
 }
 .header-imagen{
-    width: 100%;
-}
-.header-imagen img{
-    width: inherit;
-    height: 40rem;
-    object-fit: cover;
+    background: url("../IMG/Imagenes/Fondo.jpg") no-repeat center center;
+    background-size: cover;
+    min-width: 100%;
+    height: 70vh;
+    min-height: 50rem;
 }
 /*Animacion_Header*/
 .header-nav h1 a:hover, .header-nav__Lista li a:hover{
