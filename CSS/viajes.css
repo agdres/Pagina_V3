@@ -179,6 +179,7 @@ body main{
     color: rgb(250, 255, 252);
     font-size: 15rem;
     z-index: 2;
+    cursor:default;
 }
 .main-contenido p{
     display: flex;
@@ -191,6 +192,7 @@ body main{
     font-size: 4rem;
     width: 86.1rem;
     text-align: center;
+    cursor:default;
     z-index: 2;
 }
 .main-contenido__video video:hover{
@@ -216,6 +218,7 @@ body main{
     font-family: 'Shadows Into Light', cursive;
     color: rgb(250, 255, 252);
     font-size: 14rem;
+    cursor:default;
     z-index: 2;
 }
 .main-contenido__1 p{
@@ -228,6 +231,7 @@ body main{
     color: rgb(250, 255, 252);
     font-size: 4rem;
     width: 50rem;
+    cursor:default;
     justify-content: center;
     z-index: 2;
 }
