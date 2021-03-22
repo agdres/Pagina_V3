@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/viajes.css">
+    <link rel="icon" href="./IMG/Icon/Soporte.pn" sizes="16x16">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">  
+    <title>Pagina_Web_V3_Viajes</title>
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <figure class="header-nav__Logo">
+                <a href="./index.html"><img src="./IMG/Icon/Logo.png" alt="Logo"></a>
+            </figure>
+            <h1><a href="./index.html">ANGE</a></h1>
+            <label for="busqueda" class="header-nav__label">
+                <form action="busqueda" class="header-nav__label-form">
+                    <input type="search" name="busqueda" id="busqueda" placeholder="Search">
+                </form>
+            </label>
+            <ul class="header-nav__Lista">
+                <li><a href="./index.html">Inicio</li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Viajes</a></li>
+                <li><a href="#">Explorar</a></li>
+                <li><a href="./soporte.html" target="_self">Soporte</a></li>
+            </ul>
+            <form action="login" method="POST" class="header-nav__label-registro">
+                <label for="login" >            
+                    <a href="./sign_In.html" target="_blank"><input class="header-nav__label-input Registro" type="button" value="Sign in" id="login"></a>
+                </label>
+            </form>
+            <form action="ingresar" method="POST" class="header-nav__label-ingresar">
+                <label for="ingresar">
+                    <input class="header-nav__label-input Ingresar" type="button" value="Sign up">
+                </label>
+            </form>
+        </nav>
+    </header>
+    <main>
+        <section class="main-contenido">
+            <h1>Viaja</h1>
+            <p>Viajar hace de tu vida mas divertida y menos estresante, recorre todo el camino que desees, Vive!!
+            </p>
+        <div class="main-contenido__video">
+          <video id="via" src="./VIDEO/Viaje.mp4" autoplay preload="auto" loop></video>
+          <video id="puente" src="./VIDEO/Puente_Verde.mp4" autoplay preload="auto" loop></video>
+          <video src="./VIDEO/Playa.mp4" autoplay preload="auto" loop></video>
+          <video src="./VIDEO/Nieve.mp4" autoplay preload="auto" loop></video>
+        </div>
+        </section>
+    </main>
+</body>
+</html>

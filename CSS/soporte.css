@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    /*background-color: rgb(1, 2, 2);*/
+}
+/*header*/
+.header-nav{
+    width: 100%;
+    outline: solid black 0.1rem;
+    background-color: rgb(35, 42, 52);
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    position: -webkit-sticky;
+    top: 0;
+}
+.header-nav__Logo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+.header-nav__Logo img{
+    width: 4.5rem;
+    height: 4.5rem;
+    object-fit: cover;
+}
+.header-nav h1{
+    align-self: center;
+    margin-left: 0.5rem;
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 0rem 0rem 1rem 0 blanchedalmond;
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.header-nav h1 a{
+    text-decoration: none;
+    color: white;
+}
+.header-nav__label{
+    align-self: center;
+    margin-left: 10rem;
+}
+.header-nav__label input{
+    width: 50rem;
+    height: 4rem;
+    border-radius: 1rem;
+    outline: none;
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+.header-nav__Lista{
+    display: flex;
+    position: static;
+    margin-left: auto;
+    list-style: none;
+    align-items: center;
+}
+.header-nav__Lista a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+.header-nav__Lista li{
+    
+    font-size: 1.8rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+.header-nav__label-registro{
+    display: flex;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.header-nav__label-ingresar{
+    display: flex;
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.header-nav__label-input{
+    width: 10rem;
+    height: 4rem;
+}
+.Registro{
+    background: none;
+    color: white;
+    border: none;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor:pointer;
+    outline: none;
+
+}
+.Ingresar{
+    background: rgb(13, 131, 110);
+    border: black solid 0.1rem;
+    border-radius: 1rem;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor:pointer;
+    outline: none;
+}
+/*Animacion_Header*/
+.header-nav h1 a:hover, .header-nav__Lista li a:hover{
+    color: rgb(200, 202, 204);
+    transition: 0.5s;
+}
+.Registro:hover{
+    color: rgb(200, 202, 204);
+    transition: 0.5s;
+}
+.Ingresar:hover{
+    background: rgb(13, 131, 110);
+    transition: 0.5s;
+    margin-top: -1rem;
+}
+.header-nav__label input:hover{
+    border: solid black 0.1rem;
+    border-radius: 1rem;
+}
+.header-nav__label input:enabled{
+    font-weight: 700;
+}
+/*Main*/
+body main{
+    padding: 1rem;
+}
+.main-contenido{
+    width: 100%;
+    height: 87.1rem;
+    position: relative;
+    display: flex;
+    outline: black solid 0.1rem;
+}
+.main-contenido__menu{
+    width: 30%;
+    height: inherit;
+    outline: black solid 0.1rem;
+
+}
+main-contenido h1{
+    font-family: 'Shadows Into Light', cursive;
+    text-shadow: 0rem 0rem 1rem black;
+    color: rgb(250, 255, 252);
+    font-size: 8rem;
+    z-index: 2;
+}
