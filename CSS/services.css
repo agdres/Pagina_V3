@@ -5,10 +5,9 @@
 }
 html{
     font-size: 62.5%;
-    scroll-behavior: smooth;
 }
 body{
-    background-color: rgb(1, 2, 2);
+    /*background-color: rgb(1, 2, 2);*/
 }
 /*header*/
 .header-nav{
@@ -134,122 +133,24 @@ body{
 .header-nav__label input:enabled{
     font-weight: 700;
 }
-/*main-section/Animacion*/
+/*main*/
 body main{
     padding: 1rem;
 }
-.main-contenido{
+.main-section{
     display: flex;
     position: relative;
     width: 100%;
     height: 100rem;
-    background-color: gray;
     box-shadow: 0rem 0rem 1.5rem 0rem turquoise ;
 }
-.main-contenido__video{
-    width: inherit;
+.main-menuLateral{
+    width: 25%;
     height: 100rem;
+    display: flexbox;
     position: absolute;
-    align-self: center;
-    display: flex;
-    flex-wrap: wrap;
-    right: 0;
     outline: black solid 0.1rem;
 }
-.main-contenido__video video{
-    width: 55rem;
-    height: 50rem;
-    flex: 1;
-    object-fit: cover;
-    filter: brightness(70%);
-}
-#puente{
-    width: 90rem;
-} 
-#via{
-    width: 40rem;
-}
-.main-contenido_viaja{
-    display: flex;
-    position: absolute;
-    top: 20rem;
-    right: 81.8rem; 
-    font-family: 'Shadows Into Light', cursive;
-    text-shadow: 0rem 0rem 1rem rgb(24, 184, 144);
-    color: rgb(250, 255, 252);
-    font-size: 15rem;
-    z-index: 2;
-    cursor:default;
-}
-.main-contenido p{
-    display: flex;
-    position: absolute;
-    align-self: center;
-    right: 50rem; 
-    font-family: 'Shadows Into Light', cursive;
-    text-shadow: 0rem 0rem 1rem rgb(24, 184, 85);
-    color: rgb(250, 255, 252);
-    font-size: 4rem;
-    width: 86.1rem;
-    text-align: center;
-    cursor:default;
-    z-index: 2;
-}
-.main-contenido__video video:hover{
-    filter: brightness(100%);
-    transition: 1s;
-}
-/*main-section__1/Animacion*/
-.main-contenido__1{
-    margin-top: 2rem;
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100rem;
-    box-shadow: 0rem 0rem 1.5rem 0rem #3D0D43 ;
-}
-.main-contenido__1-explora{
-    display: flex;
-    position: absolute;
-    top: 26rem;
-    right: 75rem; 
-    text-shadow: 0rem 0rem 1rem rgb(24, 184, 85);
-    font-family: 'Shadows Into Light', cursive;
-    color: rgb(250, 255, 252);
-    font-size: 14rem;
-    cursor:default;
-    z-index: 2;
-}
-.main-contenido__1 p{
-    display: flex;
-    position: absolute;
-    align-self: center;
-    right: 68rem; 
-    font-family: 'Shadows Into Light', cursive;
-    text-shadow: 0rem 0rem 1rem rgb(24, 184, 144);
-    color: rgb(250, 255, 252);
-    font-size: 4rem;
-    width: 50rem;
-    cursor:default;
-    justify-content: center;
-    z-index: 2;
-}
-.main-contenido__1-img{
-    display: inherit;
-    position: absolute;
-    flex-wrap: wrap;
-    width: inherit;
-    height: inherit;
-
-}
-.main-contenido__1-img img{
-    width: 50rem;
-    height: 50rem;
-    flex: 21%;
-    object-fit: cover;
-    filter: brightness(70%);
-}
-.main-contenido__1-img img:hover{
-    filter: brightness(100%);
-    transition: 1s;
+.main-menuLateral__lista{
+    list-style: none;
 }
