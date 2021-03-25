@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./IMG/Icon/Formulario.png" sizes="16x16">
+    <link rel="stylesheet" href="./CSS/formulario.css">
     <title>Document</title>
 </head>
 <body>
     <main class="body-main">
-        <h1>Registrate y disfruta</h1>
-        <form class="body-main__form" action="registro" method="POST">
-            <label class="body-main__form--nombre" for="nombres">
-                <span>Nombres</span>
-                <input type="text" name="nombres" id="nombres" autocomplete="name" required placeholder="Example: Unos nombres">
-            </label>
-            <label class="body-main__form--apellidos" for="apellidos">
-                <span>apellidos</span>
-                <input type="text" name="apellidos" id="apellidos" autocomplete="additional-name" required placeholder="Example: Unos apellidos">
-            </label>
-            <label class="email" for="email">
-                <span>E-mail</span>
-                <input type="email" name="email" id="email" autocomplete="email" required placeholder="Example: Un_Email@gmail.com">
-            </label>
-            <label class="body-main__form--telefono" for="telefono">
-                <span>Numero telefonico</span>
-                <input type="tel" name="telefono" id="telefono" autocomplete="tel" required placeholder="Un numero">
-            </label>
-            <label class="body-main__form--usuario" for="usuario">
-                <img src="" alt="">
-                <span>Usuario</span>
-                <input type="text" name="usuario" id="usuario" autocomplete="username">
-            </label>
-            <label class="body-main__form--password" for="password">
-                <span>Contraseña</span>
-                <input type="password" name="password" id="password" autocomplete="new-password">
-            </label>
-            <input type="submit" name="" id="" value="Validar">
-        </form>
+        <figure class="body-figure">
+        </figure>
+        <section class="main-sect">
+            <h1>Registrate y disfruta</h1>
+            <form class="body-main__form" action="registro" method="POST">
+                <label class="body-main__form--nombre" for="nombres">
+                    <span>Nombres</span>
+                    <input type="text" name="nombres" autocomplete="name" id="nombres" autocomplete="name" required>
+                </label>
+                <label class="body-main__form--apellidos" for="apellidos">
+                    <span>Apellidos</span>
+                    <input type="text" name="apellidos" id="apellidos" autocomplete="additional-name" required>
+                </label>
+                <label class="body-main__form--email" for="email">
+                    <span>E-mail</span>
+                    <input type="email" name="email" id="email" autocomplete="email" required placeholder="Example@email.com">
+                </label>
+                <label class="body-main__form--telefono" for="telefono">
+                    <span>Numero telefonico</span>
+                    <input type="tel" name="telefono" id="telefono" autocomplete="tel" pattern="[0-9]{10}" maxlength="10">
+                </label>
+                <label class="body-main__form--usuario" for="usuario">
+                    <span>Usuario</span>
+                    <input type="text" name="usuario" id="usuario" autocomplete="username">
+                </label>
+                <label class="body-main__form--password" for="password">
+                    <span>Contraseña</span>
+                    <input type="password" name="password" id="password" autocomplete="off">
+                </label>
+                <input  type="submit" name="enviar" id="enviar" value="Validar">
+            </form>
+        </section>
     </main>
 </body>
 </html>
